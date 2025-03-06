@@ -1,0 +1,54 @@
+.scroll-card {
+  flex: 0 0 auto;
+  width: 13em;
+  scroll-snap-align: center;
+  border-radius: 0.3em;
+  margin-top: 0px;
+}
+
+.scroll-container {
+  white-space: nowrap;
+  cursor: grab;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.mobile-tablet-view {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .mobile-tablet-view {
+    display: none;
+  }
+}
+
+.desktop-view {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .desktop-view {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-custom-height {
+    height: 130px;
+  }
+}
+
+custom-justify {
+  text-align: justify;
+}
+
+custom-justify {
+  text-align: justify;
+}
+
